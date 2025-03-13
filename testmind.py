@@ -1,6 +1,7 @@
 import streamlit as st
 from ai_handler import generate_test_cases
 from ui_components import sidebar_options, display_results
+from utils import export_test_cases, toggle_theme
 
 # ---- Streamlit UI Customization ----
 st.set_page_config(
@@ -9,21 +10,8 @@ st.set_page_config(
     page_icon="🧪"
 )
 
-# ---- Custom Styling for a Sleek Look ----
-st.markdown(
-    """
-    <style>
-        /* Global Styling */
-        body { font-family: 'Arial', sans-serif; background-color: #f4f4f4; }
-        .main { background-color: white; padding: 20px; border-radius: 10px; }
-        .stTextArea textarea { font-size: 14px !important; }
-        .stButton button { border-radius: 8px; background-color: #1f77b4; color: white; font-weight: bold; }
-        .stButton button:hover { background-color: #105a8b; }
-        .stSidebar { background-color: #1e1e1e !important; color: white !important; }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+# ---- Dark Mode Toggle ----
+toggle_theme()
 
 # ---- Header with Logo & Description ----
 col1, col2 = st.columns([0.2, 0.8])
@@ -32,7 +20,7 @@ with col1:
 with col2:
     st.title("🚀 TestMind: AI-Powered Test Automation")
     st.markdown(
-        "### ✅ Generate industry-standard test cases for **automation & manual testing** using AI!"
+        "### ✅ AI-powered test generation for **automation & manual testing**"
         "\n> Supports **Cypress, Selenium, Playwright, Postman**, and more."
     )
 
@@ -65,6 +53,7 @@ if st.button("✨ Generate AI Test Cases", use_container_width=True):
             - Include assertions for verification.
             - Optimize for maintainability and reusability.
             - Provide step-by-step instructions if necessary.
+            - Suggest missing test cases for better coverage.
             """
         else:  # Manual Test Cases
             prompt = f"""
@@ -78,6 +67,7 @@ if st.button("✨ Generate AI Test Cases", use_container_width=True):
             - **Expected Result**
             - **Test Priority** (High, Medium, Low)
             - **Preconditions** (If applicable)
+            - **Suggest improvements for better test coverage.**
             """
 
         # ---- Call AI Handler ----
@@ -89,6 +79,9 @@ if st.button("✨ Generate AI Test Cases", use_container_width=True):
 
         # ---- Display Results ----
         display_results(test_cases)
+
+        # ---- Export Options ----
+        export_test_cases(test_cases)
 
     else:
         st.warning("⚠️ Please enter input data to generate test cases.")
