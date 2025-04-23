@@ -33,7 +33,7 @@ Built for **QA professionals, developers, and researchers**, TestMind can transf
 
 
 ## 📁 Project Structure
-
+```
 |-- .github
 |     |-- workflows
 |          |-- testmind-ci.yml                  # GitHub Actions CI/CD workflow for TestMind
@@ -53,7 +53,7 @@ Built for **QA professionals, developers, and researchers**, TestMind can transf
 |-- requirements.txt                            # Python dependencies
 |-- README.md                                   # Project documentation and usage guide
 |-- .gitignore                                  # Files and folders to ignore in Git
-
+```
 
 ## 🛠️ Setup & Installation
 
