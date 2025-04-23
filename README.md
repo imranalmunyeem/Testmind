@@ -18,8 +18,41 @@ Built for **QA professionals, developers, and researchers**, TestMind can transf
 
 ---
 
+## 🛠 Tools & Libraries Used
+
+[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)  
+[![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://streamlit.io/)  
+[![Google Gemini API](https://img.shields.io/badge/Google%20Gemini%20API-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://ai.google.dev/)  
+[![Cypress](https://img.shields.io/badge/Cypress-17202C?style=for-the-badge&logo=cypress&logoColor=white)](https://www.cypress.io/)  
+[![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=selenium&logoColor=white)](https://www.selenium.dev/)  
+[![Playwright](https://img.shields.io/badge/Playwright-2E2E2E?style=for-the-badge&logo=playwright&logoColor=green)](https://playwright.dev/)  
+[![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)](https://www.postman.com/)  
+[![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)](https://code.visualstudio.com/)  
+[![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)](https://github.com/features/actions)  
+[![Markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)](https://www.markdownguide.org/)  
+
+
 ## 📁 Project Structure
 
+|-- .github
+|     |-- workflows
+|          |-- testmind-ci.yml                  # GitHub Actions CI/CD workflow for TestMind
+|-- src
+|     |-- components
+|          |-- ui_components.py                 # Streamlit UI layout and reusable components
+|     |-- handlers
+|          |-- ai_handler.py                    # Handles prompt calls to Google Gemini API
+|     |-- utils
+|          |-- utils.py                         # Export, theme toggle, and helper utilities
+|     |-- config.py                             # Configuration settings (API keys, model name)
+|-- assets
+|     |-- images
+|          |-- logo.png                         # Logo used in the header
+|-- testmind_app
+|     |-- main.py                               # Main Streamlit app script
+|-- requirements.txt                            # Python dependencies
+|-- README.md                                   # Project documentation and usage guide
+|-- .gitignore                                  # Files and folders to ignore in Git
 
 
 ## 🛠️ Setup & Installation
