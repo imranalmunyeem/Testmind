@@ -1,7 +1,5 @@
 # 🧠 TestMind — AI-Powered Test Case Generation Tool
 
-![TestMind Logo](https://cdn-icons-png.flaticon.com/512/3039/3039525.png)
-
 🚀 **TestMind** is an AI-augmented test automation assistant that generates automated and manual test cases for web applications using **Google Gemini API**. It supports multiple testing frameworks including **Cypress**, **Selenium**, **Playwright**, and **Postman**.
 
 Built for **QA professionals, developers, and researchers**, TestMind can transform DOMs, endpoint descriptions, or free text into structured test scripts or manual test case documentation.
