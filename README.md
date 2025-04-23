@@ -52,23 +52,23 @@ streamlit run main.py
 ```
 
 ## 🚀 How to Use
-Choose Test Parameters from the sidebar:
+-  Choose Test Parameters from the sidebar:
 
-Input type: DOM, endpoint, text, scenario
+-  Input type: DOM, endpoint, text, scenario
 
-Test case type: Manual or Automated
+-  Test case type: Manual or Automated
 
-Framework: Cypress, Selenium, Playwright, Postman
+-  Framework: Cypress, Selenium, Playwright, Postman
 
-Paste Input (e.g., HTML snippet or scenario description)
+-  Paste Input (e.g., HTML snippet or scenario description)
 
-Click ✨ Generate AI Test Cases
+-  Click ✨ Generate AI Test Cases
 
-🎉 Test cases will appear in the interface with export options
+-  🎉 Test cases will appear in the interface with export options
 
 ## 📦 Export Options
-Download results as .txt or .json
+-  Download results as .txt or .json
 
-Auto-logs each session with timestamp, input, framework, and test type
+-  Auto-logs each session with timestamp, input, framework, and test type
 
-Saved in the results/ folder
+-  Saved in the results/ folder
